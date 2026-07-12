@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main{
+  height:90vh;
+  width:100vw;
+  margin-top:2vh;
+  background-image: url("accets/hero.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-text{
+  position:absolute;
+  height:20vh;
+  width:50vw;
+  margin-top:30vh;
+  margin-left:5vw;
+  font-size:4em;
+  font-weight:600;
+}
+
+.hero-text span{
+  font-weight:900;
+  color:#0069bcff;
+  text-decoration: underline;
+}
+
+.text2{
+  position:absolute;
+  height:20vh;
+  width:50vw;
+  margin-top:60vh;
+  margin-left:5vw;
+  font-size:1em;
+}
+
+nav{
+    position:absolute;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#dfefff;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    border:solid 1px black;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo p{
+    color:#0069bcff;
+    font-weight:600;
+    text-align:center;
+}
+
+.logo p span{
+    color:black;
+    font-size:20px;
+    font-weight:900;
+}
+
+/* Buttons */
+.login-button{
+    display:flex;
+    gap:15px;
+}
+
+.user{
+    padding:12px 28px;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:white;
+    color:#0069bcff;
+}
+
+.login{
+    background:#0069bcff;
+    color:white;
+}
+
+.user:hover{
+    border:2px solid black;
+}
+
+footer{
+  height:12%;
+  width:100%;
+  background-color:#0069bcff;
+  position:absolute;
+  bottom:0;
+  position:fixed;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:5px 10px;
+}
+
+.fot:hover{
+  border:solid 2px black;
+}
+
+.fot{
+  width:20%;
+  height:95%;
+  border-radius:10px;
+  text-align:center;
+  color:white;
+  padding:10px 10px;
+  cursor:pointer;
+}
+
+.home p{
+  font-size:12px;
+  margin-top:6%;
+}
+
+.department p{
+  font-size:12px;
+  margin-top:6%;
+}
+
+.doctors p{
+  font-size:12px;
+  margin-top:6%;
+}
+
+.about p{
+  font-size:12px;
+  margin-top:6%;
+}
+
+.contact p{
+  font-size:12px;
+  margin-top:6%;
+}
