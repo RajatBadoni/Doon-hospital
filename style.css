@@ -5,7 +5,44 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+main{
+  height:90vh;
+  width:100vw;
+  margin-top:2vh;
+  background-image: url("accets/hero.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-text{
+  position:absolute;
+  height:20vh;
+  width:50vw;
+  margin-top:30vh;
+  margin-left:5vw;
+  font-size:4em;
+  font-weight:600;
+}
+
+.hero-text span{
+  font-weight:900;
+  color:#0069bcff;
+  text-decoration: underline;
+}
+
+.text2{
+  position:absolute;
+  height:20vh;
+  width:50vw;
+  margin-top:60vh;
+  margin-left:5vw;
+  font-size:1em;
+}
+
 nav{
+    position:absolute;
+    width:100%;
+    top:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -62,9 +99,10 @@ nav{
 footer{
   height:12%;
   width:100%;
-  background-color:black;
+  background-color:#0069bcff;
   position:absolute;
   bottom:0;
+  position:fixed;
   display:flex;
   justify-content:space-evenly;
   align-items:center;
