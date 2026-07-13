@@ -147,3 +147,14 @@ footer{
   font-size:12px;
   margin-top:6%;
 }
+
+.services-sec{
+    display:flex;
+    justify-content: space-evenly;
+}
+.box{
+    height:20vh;
+    width:80%;
+    border:2px solid black;
+    
+}
