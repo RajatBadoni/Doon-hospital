@@ -39,6 +39,22 @@ main{
   font-size:1em;
 }
 
+.appointment{
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  height:10%;
+  width:20%;
+  position:absolute;
+  margin-top:70vh;
+  margin-left:5vw;
+  background-color:#0069bcff;
+  color:white;
+  border-radius:20px;
+  font-size:1.5rem;
+  font-weight:600;
+}
+
 nav{
     position:absolute;
     width:100%;
@@ -148,13 +164,46 @@ footer{
   margin-top:6%;
 }
 
-.services-sec{
-    display:flex;
-    justify-content: space-evenly;
+.services{
+  height:50vh;
+  align-content: center;
+  text-align:center;
+  font-size:3rem;
+  font-weight:900;
+  background-color:yellowyh;
 }
+
+.services span{
+  font-weight:400;
+  font-size:1rem;
+  color:#0069bcff;
+}
+
+.dep-boxes{
+  height:30vh;
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+  border-bottom:solid 5px #0069bcff;
+}
+
 .box{
-    height:20vh;
-    width:80%;
-    border:2px solid black;
-    
+  background-color:#0069accf;
+  color:white;
+  height:60%;
+  width:10vw;
+  border-radius:2vh;
+  margin-bottom: 10%;
+  align-content:center;
+  text-align:center;
+  font-weight:600;
+}
+
+.box:hover{
+  background-color:#0069bcff;
+  border:2px solid black;
+}
+.space{
+ height:55vh;
+  width:100%;
 }
