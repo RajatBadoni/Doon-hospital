@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doon Hospital – Our Doctors</title>
+
+  <link rel="stylesheet" href="doctor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body bgcolor="#e1f2ff">
+
+<nav>
+  <div class="logo">
+    <i class="fa-solid fa-hospital fa-2x" style="color: rgb(0,105,188);"></i>
+    <p>Doon<br> <span>Hospital</span></p>
+  </div>
+  <div class="login-button">
+    <button class="user login">Login</button>
+    <button class="user">Register</button>
+  </div>
+</nav>
+
+<!-- ===== DOCTORS PAGE HERO ===== -->
+<section class="doctors-page-hero">
+  <div class="hero-content">
+    <h1>Our Expert Doctors</h1>
+    <p>______ dedicated to your well-being</p>
+    <span>Meet the specialists who make Doon Hospital a centre of excellence.</span>
+  </div>
+</section>
+
+<!-- ===== DEPARTMENT FILTER TABS ===== -->
+<div class="filter-tabs">
+  <button class="filter-btn active" data-department="all">All</button>
+  <button class="filter-btn" data-department="cardiology">Cardiology</button>
+  <button class="filter-btn" data-department="neurology">Neurology</button>
+  <button class="filter-btn" data-department="orthopedics">Orthopedics</button>
+  <button class="filter-btn" data-department="ent">ENT</button>
+  <button class="filter-btn" data-department="dental">Dental</button>
+  <button class="filter-btn" data-department="general">General Medicine</button>
+</div>
+
+<!-- ===== DOCTOR GRID ===== -->
+<section class="doctor-grid-section">
+  <div class="doctor-grid-container">
+
+    <!-- Doctor 1 - Cardiology -->
+    <div class="doctor-card" data-department="cardiology">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Ananya Sharma</h3>
+      <p class="specialty">Cardiologist</p>
+      <p class="qualification">MBBS, MD (Cardiology), DM</p>
+      <p class="experience">15+ years experience</p>
+      <div class="dept-tag">Cardiology</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 2 - Neurology -->
+    <div class="doctor-card" data-department="neurology">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Rajeev Verma</h3>
+      <p class="specialty">Neurologist</p>
+      <p class="qualification">MBBS, MD (Neurology)</p>
+      <p class="experience">12+ years experience</p>
+      <div class="dept-tag">Neurology</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 3 - Orthopedics -->
+    <div class="doctor-card" data-department="orthopedics">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Meera Iyer</h3>
+      <p class="specialty">Orthopedic Surgeon</p>
+      <p class="qualification">MBBS, MS (Ortho)</p>
+      <p class="experience">10+ years experience</p>
+      <div class="dept-tag">Orthopedics</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 4 - ENT -->
+    <div class="doctor-card" data-department="ent">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Sunil Kumar</h3>
+      <p class="specialty">ENT Specialist</p>
+      <p class="qualification">MBBS, MS (ENT)</p>
+      <p class="experience">8+ years experience</p>
+      <div class="dept-tag">ENT</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 5 - Dental -->
+    <div class="doctor-card" data-department="dental">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Priya Malhotra</h3>
+      <p class="specialty">Dentist</p>
+      <p class="qualification">BDS, MDS (Oral Surgery)</p>
+      <p class="experience">7+ years experience</p>
+      <div class="dept-tag">Dental</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 6 - General Medicine -->
+    <div class="doctor-card" data-department="general">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Sanjay Gupta</h3>
+      <p class="specialty">General Physician</p>
+      <p class="qualification">MBBS, MD (Internal Medicine)</p>
+      <p class="experience">14+ years experience</p>
+      <div class="dept-tag">General Medicine</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 7 - Cardiology -->
+    <div class="doctor-card" data-department="cardiology">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Ravi Desai</h3>
+      <p class="specialty">Interventional Cardiologist</p>
+      <p class="qualification">MBBS, MD, DM (Cardiology)</p>
+      <p class="experience">18+ years experience</p>
+      <div class="dept-tag">Cardiology</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 8 - Neurology -->
+    <div class="doctor-card" data-department="neurology">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Sneha Reddy</h3>
+      <p class="specialty">Pediatric Neurologist</p>
+      <p class="qualification">MBBS, MD (Pediatrics), DM (Neuro)</p>
+      <p class="experience">9+ years experience</p>
+      <div class="dept-tag">Neurology</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 9 - Orthopedics -->
+    <div class="doctor-card" data-department="orthopedics">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Arjun Singh</h3>
+      <p class="specialty">Joint Replacement Surgeon</p>
+      <p class="qualification">MBBS, MS (Ortho), MCh</p>
+      <p class="experience">11+ years experience</p>
+      <div class="dept-tag">Orthopedics</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+    <!-- Doctor 10 - ENT -->
+    <div class="doctor-card" data-department="ent">
+      <div class="doctor-avatar">
+        <i class="fa-solid fa-user-md"></i>
+      </div>
+      <h3>Dr. Kavita Nair</h3>
+      <p class="specialty">Otolaryngologist</p>
+      <p class="qualification">MBBS, MS (ENT)</p>
+      <p class="experience">6+ years experience</p>
+      <div class="dept-tag">ENT</div>
+      <button class="book-btn">Book Appointment</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SPACER FOR FIXED FOOTER ===== -->
+<div class="space"></div>
+
+ <!--footer-->
+<footer>
+  <a href="index.html">
+  <div class="fot home">
+    <i class="fa-solid fa-house fa-2xl" style="color: rgb(252, 252, 252);"></i>
+    <p>HOME</p>
+    </a>
+  </div>
+  <div class="fot department">
+    <i class="fa-solid fa-building-user fa-2xl" style="color: rgb(252, 252, 252);"></i>
+    <p>DEPARTMENTS</p>
+  </div>
+  <div class="fot about">
+    <i class="fa-solid fa-circle-info fa-2xl" style="color: rgb(252, 252, 252);"></i>
+    <p>ABOUT</p>
+  </div>
+  <a href="doctor.html">
+  <div class="fot doctors">
+    <i class="fa-solid fa-user-doctor fa-2xl" style="color: rgb(252, 252, 252);"></i>
+    <p>DOCTORS</p>
+     </a>
+  </div>
+  <div class="fot contact">
+    <i class="fa-solid fa-phone fa-2xl" style="color: rgb(252, 252, 252);"></i>
+    <p>CONTACT</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
