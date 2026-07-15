@@ -12,16 +12,18 @@ main{
   background-image: url("accets/hero.png");
   background-size:100% 100%;
   background-repeat: no-repeat;
+  position:relative;
 }
 
 .hero-text{
   position:absolute;
-  height:20vh;
+  height:auto;
   width:50vw;
   margin-top:30vh;
   margin-left:5vw;
   font-size:4em;
   font-weight:600;
+  line-height:1.2;
 }
 
 .hero-text span{
@@ -32,7 +34,7 @@ main{
 
 .text2{
   position:absolute;
-  height:20vh;
+  height:auto;
   width:50vw;
   margin-top:60vh;
   margin-left:5vw;
@@ -45,6 +47,7 @@ main{
   justify-content:space-evenly;
   height:10%;
   width:20%;
+  min-width:180px;
   position:absolute;
   margin-top:70vh;
   margin-left:5vw;
@@ -53,12 +56,14 @@ main{
   border-radius:20px;
   font-size:1.5rem;
   font-weight:600;
+  padding:0 10px;
 }
 
 nav{
-    position:absolute;
     width:100%;
     top:0;
+    left:0;
+    z-index:100;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -116,9 +121,10 @@ footer{
   height:12%;
   width:100%;
   background-color:#0069bcff;
-  position:absolute;
-  bottom:0;
   position:fixed;
+  bottom:0;
+  left:0;
+  z-index:100;
   display:flex;
   justify-content:space-evenly;
   align-items:center;
@@ -131,12 +137,17 @@ footer{
 
 .fot{
   width:20%;
+  max-width:120px;
   height:95%;
   border-radius:10px;
   text-align:center;
   color:white;
   padding:10px 10px;
   cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 .home p{
@@ -165,12 +176,14 @@ footer{
 }
 
 .services{
-  height:50vh;
-  align-content: center;
+  height:auto;
+  min-height:50vh;
+  align-content:center;
   text-align:center;
   font-size:3rem;
   font-weight:900;
-  background-color:yellowyh;
+  background-color:#e1f2ff;  /* fixed typo from 'yellowyh' */
+  padding:2rem 1rem;
 }
 
 .services span{
@@ -180,30 +193,385 @@ footer{
 }
 
 .dep-boxes{
-  height:30vh;
+  height:auto;
+  min-height:30vh;
   width:100%;
   display:flex;
+  flex-wrap:wrap;
   justify-content:space-evenly;
+  align-items:center;
+  gap:1.5rem 1rem;
   border-bottom:solid 5px #0069bcff;
+  padding:1.5rem 1rem;
 }
 
 .box{
   background-color:#0069accf;
   color:white;
   height:60%;
+  min-height:140px;
   width:10vw;
+  min-width:120px;
+  max-width:160px;
   border-radius:2vh;
-  margin-bottom: 10%;
+  margin-bottom:10%;
   align-content:center;
   text-align:center;
   font-weight:600;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  padding:10px;
 }
 
 .box:hover{
   background-color:#0069bcff;
   border:2px solid black;
 }
+
 .space{
  height:55vh;
-  width:100%;
+ width:100%;
+}
+
+/* ==========================================
+   NEW STYLES FOR EXTENDED SECTIONS (LAPTOP)
+   ========================================== */
+
+/* ----- ABOUT SECTION ----- */
+.about-section {
+  background: #d4eaff;
+  padding: 4rem 2rem;
+  border-bottom: 5px solid #0069bcff;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 2.8rem;
+  color: #0069bcff;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #1a2a3a;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat-item i {
+  font-size: 3rem;
+  color: #0069bcff;
+}
+
+.stat-item p {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #1a2a3a;
+}
+
+/* ----- DOCTORS SECTION ----- */
+.doctors-section {
+  background: #e1f2ff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.doctors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.doctors-container h2 {
+  font-size: 2.8rem;
+  color: #0069bcff;
+  font-weight: 900;
+}
+
+.section-subtitle {
+  color: #0069bcff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.doctor-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.doctor-card {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 200px;
+  transition: 0.2s;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 105, 188, 0.15);
+  transform: translateY(-4px);
+}
+
+.doctor-card i {
+  font-size: 4rem;
+  color: #0069bcff;
+}
+
+.doctor-card h4 {
+  margin: 0.8rem 0 0.2rem;
+  font-size: 1.1rem;
+  color: #1a2a3a;
+}
+
+.doctor-card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ----- TESTIMONIALS SECTION ----- */
+.testimonials-section {
+  background: #d4eaff;
+  padding: 4rem 2rem;
+  border-top: 5px solid #0069bcff;
+  border-bottom: 5px solid #0069bcff;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-container h2 {
+  font-size: 2.8rem;
+  color: #0069bcff;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 320px;
+  flex: 1 1 260px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.testimonial-card .stars {
+  color: #ffc107;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a2a3a;
+  margin-bottom: 0.8rem;
+}
+
+.patient-name {
+  font-weight: bold;
+  font-style: normal !important;
+  color: #0069bcff !important;
+}
+
+/* ----- CONTACT / FOOTER INFO SECTION ----- */
+.contact-section {
+  background:#424242;
+  padding: 3rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details div i {
+  font-size: 2rem;
+}
+
+.contact-details div p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons i {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.social-icons i:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* ----- LAPTOP FINE-TUNING (no mobile breakpoints) ----- */
+@media screen and (max-width: 1366px) {
+  .hero-text {
+    font-size: 3.5em;
+    width: 55vw;
+    margin-top: 28vh;
+  }
+  .text2 {
+    margin-top: 55vh;
+    font-size: 0.95em;
+  }
+  .appointment {
+    width: 22%;
+    min-width: 160px;
+    margin-top: 65vh;
+    font-size: 1.3rem;
+  }
+  .box {
+    min-width: 110px;
+    min-height: 130px;
+    width: 9vw;
+  }
+  .about-container h2,
+  .doctors-container h2,
+  .testimonials-container h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    font-size: 3em;
+    width: 58vw;
+    margin-top: 26vh;
+  }
+  .text2 {
+    margin-top: 52vh;
+    width: 55vw;
+  }
+  .appointment {
+    width: 24%;
+    min-width: 150px;
+    margin-top: 62vh;
+    font-size: 1.2rem;
+  }
+  .services {
+    font-size: 2.8rem;
+    min-height: 45vh;
+  }
+  .box {
+    min-width: 100px;
+    min-height: 120px;
+    width: 10vw;
+  }
+  .doctor-card {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-text {
+    font-size: 2.8em;
+    width: 60vw;
+    margin-top: 25vh;
+  }
+  .text2 {
+    margin-top: 50vh;
+    width: 60vw;
+    font-size: 0.9em;
+  }
+  .appointment {
+    width: 26%;
+    min-width: 140px;
+    margin-top: 60vh;
+    font-size: 1.1rem;
+    height: 9%;
+  }
+  .user {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+  .services {
+    font-size: 2.5rem;
+    min-height: 40vh;
+  }
+  .box {
+    min-width: 90px;
+    min-height: 110px;
+    width: 12vw;
+  }
+  .box i {
+    font-size: 2.5rem;
+  }
+  .fot i {
+    font-size: 1.5rem;
+  }
+  .fot p {
+    font-size: 10px;
+  }
+  .about-stats {
+    gap: 2rem;
+  }
+  .doctor-grid {
+    gap: 1.5rem;
+  }
+  .testimonial-grid {
+    gap: 1.5rem;
+  }
 }
