@@ -9,38 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.warn('⚠️ Feature skipped:', e.message);
         }
     }
-
-    // ============================================
-    // 1. SCROLL TO TOP BUTTON
-    // ============================================
-    safeExecute(function () {
-        const btn = document.createElement('button');
-        btn.id = 'scrollTopBtn';
-        btn.innerHTML = '↑';
-        btn.style.cssText = `
-            position: fixed; bottom: 30px; right: 30px; z-index: 999;
-            background: #0d6efd; color: white; border: none; border-radius: 50%;
-            width: 50px; height: 50px; font-size: 24px; cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0;
-            visibility: hidden; transition: all 0.3s ease;
-        `;
-        document.body.appendChild(btn);
-
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 300) {
-                btn.style.opacity = '1';
-                btn.style.visibility = 'visible';
-            } else {
-                btn.style.opacity = '0';
-                btn.style.visibility = 'hidden';
-            }
-        });
-
-        btn.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    });
-
     // ============================================
     // 2. ACTIVE NAV LINK HIGHLIGHT
     // ============================================

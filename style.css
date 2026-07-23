@@ -199,8 +199,9 @@ nav {
 }
 
 .hero-content h1 {
+  width:50vw;
   text-align:start;
-  font-size: 4.2rem;
+  font-size: 4rem;
   color:black;
   font-weight: 900;
   margin-bottom: 0.5rem;
@@ -410,9 +411,6 @@ nav {
   transition: 0.3s ease;
 }
 
-.gallery-item:hover .gallery-overlay {
-  opacity: 1;
-}
 
 .gallery-overlay span {
   color: #ffffff;
